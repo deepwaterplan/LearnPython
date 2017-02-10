@@ -451,9 +451,9 @@
 #-- 手动迭代：iter和next
     L = [1, 2]
     I = iter(L)                        # I为L的迭代器
-    I.next()                           # 返回1
-    I.next()                           # 返回2
-    I.next()                           # Error:StopIteration
+    I.__next__()                           # 返回1
+    I.__next__()                           # 返回2
+    I.__next__()                           # Error:StopIteration
     
 #-- Python中的可迭代对象
     """
